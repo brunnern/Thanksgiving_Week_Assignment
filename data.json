@@ -1,0 +1,34 @@
+{
+    "topics": [
+        {
+            "category": "Character Analysis",
+            "title": "Harry Potter",
+            "summary": "Examines Harry as a reluctant hero, shaped by trauma, friendship, and moral choice.",
+            "difficulty": "Intro"
+        },
+        {
+            "category": "Character Analysis",
+            "title": "Severus Snape",
+            "summary": "Looks at Snape as a morally gray figure, motivated by guilt, grief, and loyalty.",
+            "difficulty": "Intermediate"
+        },
+        {
+            "category": "Themes",
+            "title": "Power and Corruption",
+            "summary": "Explores how the pursuit of power distorts characters like Voldemort and the Ministry.",
+            "difficulty": "Intermediate"
+        },
+        {
+            "category": "Themes",
+            "title": "Found Family",
+            "summary": "Discusses the way Hogwarts and the Weasleys function as chosen family for Harry.",
+            "difficulty": "Intro"
+        },
+        {
+            "category": "Worldbuilding",
+            "title": "Magical Institutions",
+            "summary": "Analyzes Hogwarts, the Ministry, and the Order as competing centers of authority.",
+            "difficulty": "Advanced"
+        }
+    ]
+}

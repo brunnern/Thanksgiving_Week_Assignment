@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter Study Hub</title>
+    <script src="jquery-3.7.1.js"></script>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: #111827;
+            color: #e5e7eb;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        select, button {
+            padding: 8px 12px;
+            border-radius: 6px;
+            border: 1px solid #4b5563;
+            background: #1f2937;
+            color: #e5e7eb;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #374151;
+        }
+        #topics-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 16px;
+        }
+        .topic-card {
+            background: #1f2937;
+            border-radius: 8px;
+            padding: 16px;
+            box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+            border: 1px solid #4b5563;
+        }
+        .topic-category {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #9ca3af;
+            margin-bottom: 4px;
+        }
+        .topic-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+        .topic-summary {
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+        }
+        .topic-difficulty {
+            font-size: 0.8rem;
+            padding: 3px 8px;
+            border-radius: 999px;
+            background: #111827;
+            display: inline-block;
+            border: 1px solid #6b7280;
+        }
+        #status {
+            text-align: center;
+            margin-top: 12px;
+            font-size: 0.9rem;
+            color: #9ca3af;
+        }
+    </style>
+    <link rel="icon" type="image/png" href="hp-hat.png">
+</head>
+<body>
+    <h1>Harry Potter Study Hub</h1>
+
+    <div class="controls">
+        <select id="category-filter">
+            <option value="all">All Categories</option>
+            <option value="Character Analysis">Character Analysis</option>
+            <option value="Themes">Themes</option>
+            <option value="Worldbuilding">Worldbuilding</option>
+        </select>
+        <select id="difficulty-filter">
+            <option value="all">All difficulty levels</option>
+            <option value="Intro">Intro</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Advanced">Advanced</option>
+        </select>
+        <button id="load-topics">Load Topics</button>
+    </div>
+
+    <div id="topics-container">
+        <!-- AJAX-loaded content goes here -->
+    </div>
+
+    <div id="status"></div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
